@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <script src="https://kit.fontawesome.com/0535feebc1.js" crossorigin="anonymous"></script>
+
+    <title>Responsive Login Form Sign In Sign Up</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <h1 style="color: white;">Welcome To LetsChat</h1>
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+
+                <img src="img-login.svg" alt="">
+            </div>
+
+            <div class="login__forms">
+                <div class="login__registre" id="login-in">
+                    <h1 class="login__title">Sign In</h1>
+
+                    <div class="login__box">
+
+                        <input type="text" placeholder="Username" class="login__input" id="login_inputt">
+                    </div>
+                    <p class="Warning" id="warning"></p>
+
+
+
+
+
+                    <a href="#" class="login__button" id="SignIn">Sign In</a>
+
+
+                </div>
+
+                <div class="login__create none" id="login-up">
+
+                    <h1 class="login__title">Create Room</h1>
+
+                    <div class="login__box">
+
+                        <input type="text" placeholder="Room Name" class="login__input">
+                    </div>
+
+
+                    <a href="#" class="login__button" id="MakeRoom">Make Room</a>
+
+                    <a href="#" class="login__button" id="LogOut">Log Out</a>
+
+                    <div>
+                        <span class="login__account">Oops! Wanna change your Name?</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyD96Lgszg8M9TptKknYlfnCDsEfy9ZO2dQ",
+            authDomain: "hwforfirebase.firebaseapp.com",
+            databaseURL: "https://hwforfirebase.firebaseio.com",
+            projectId: "hwforfirebase",
+            storageBucket: "hwforfirebase.appspot.com",
+            messagingSenderId: "297251167674",
+            appId: "1:297251167674:web:ac070375a455971c7b1183",
+            measurementId: "G-Z7PPXV5NEJ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="index.js"></script>
+</body>
